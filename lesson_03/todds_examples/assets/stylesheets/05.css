@@ -1,0 +1,9 @@
+.btn {
+    font-size: 32px;
+}
+.btn-danger {
+    background: red;
+}
+.btn-success {
+    background: green;
+}

@@ -1,0 +1,26 @@
+/*
+a:link      - a normal, unvisited link
+a:visited   - a link the user has visited
+a:hover     - a link when the user mouses over it
+a:active    - a link the moment it is clicked
+*/
+
+/* unvisited link */
+ a:link {
+    color: #FF0000;
+}
+
+/* visited link */
+a:visited {
+    color: #00FF00;
+}
+
+/* mouse over link */
+a:hover {
+    color: #FF00FF;
+}
+
+/* selected link */
+a:active {
+    color: #0000FF;
+}
