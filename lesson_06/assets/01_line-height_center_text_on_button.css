@@ -1,0 +1,17 @@
+button {
+    width: 100px;
+    height: 50px;
+    /*line-height: 22px;*/
+    background: yellow;
+    border: 1px solid rgba(0,0,0,.3);
+    border-radius: 5px;
+    /*font-family: 'Indie Flower', cursive;*/
+    font: 22px  'Indie Flower', sans-serif;
+    /*text-align: center;*/
+    /*vertical-align: middle;*/
+    /*padding: .5em;*/
+}
+
+button:hover {
+    background: pink;
+}
