@@ -1,0 +1,14 @@
+
+* {
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+nav {
+    display: inline-block;
+    width: 25%;
+}
+.column {
+    display: inline-block;
+    width: 75%;
+}
