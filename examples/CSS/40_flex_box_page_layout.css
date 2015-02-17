@@ -38,6 +38,7 @@
 /*GREATER THAN 600px*/
 @media all and (min-width: 600px) {
     .aside { flex: 1 auto; }
+    body { padding: 0 2em; }
 }
 
 /*GREATER THAN 800px*/
@@ -47,8 +48,5 @@
     .main    { order: 2; }
     .aside-2 { order: 3; }
     .footer  { order: 4; }
-}
-
-body {
-    padding: 2em;
+    body { padding: 0 3em; }
 }

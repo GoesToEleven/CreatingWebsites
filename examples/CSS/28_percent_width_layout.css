@@ -13,6 +13,10 @@
     margin: 0 auto;
 }
 
+ul {
+    list-style-type: none;
+}
+
 nav {
     position: absolute;
     /*width: 200px;*/

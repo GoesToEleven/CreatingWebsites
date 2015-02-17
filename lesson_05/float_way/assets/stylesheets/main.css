@@ -42,8 +42,8 @@ blockquote, q {
     quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote::before, blockquote::after,
+q::before, q::after {
     content: '';
     content: none;
 }
@@ -60,16 +60,57 @@ table {
 */
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
-.container {
+.container,
+.grid {
     margin: 0 auto;
+    width: 960px;
+}
+
+.container {
     padding-left: 30px;
     padding-right: 30px;
-    width: 960px;
+}
+
+.col-1-3 {
+    width: 33.33%;
+}
+
+.col-2-3 {
+    width: 66.66%;
+}
+
+.col-1-3,
+.col-2-3 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.grid,
+.col-1-3,
+.col-2-3 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.group::after {
+    clear: both;
+}
+
+.group {
+    clear: both;
+    overflow: auto;
 }
 
 /*
@@ -101,10 +142,68 @@ h1, h3, h4, h5, p {
 
 /*
   ========================================
+  Primary header
+  ========================================
+*/
+
+.logo {
+    border-top: 4px solid #648880;
+    float: left;
+    padding: 40px 0 22px 0;
+}
+
+/*
+  ========================================
+  Primary footer
+  ========================================
+*/
+
+.primary-footer {
+    padding-bottom: 44px;
+    padding-top: 44px;
+}
+
+.primary-footer small {
+    float: left;
+}
+
+/*
+  ========================================
   Home
   ========================================
 */
 
 .hero {
     padding: 22px 80px 66px 80px;
+}
+
+/*
+  ========================================
+  see regions of document - for development only
+  ========================================
+*/
+
+
+header {
+    background-color: lightblue;
+}
+
+section.hero {
+    background-color: green;
+}
+
+section.grid {
+    background-color: pink;
+}
+
+h1, section.col-1-3 {
+    border: 2px solid red;
+}
+
+h3, nav {
+    border: 2px solid black;
+}
+
+footer {
+    background-color: darkturquoise;
 }
