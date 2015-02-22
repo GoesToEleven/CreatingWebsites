@@ -23,6 +23,7 @@
     background: cornflowerblue;
 }
 
+/* 600px AND LESS */
 @media all and (max-width: 600px) {
     .navigation {
         /*FLEX*/

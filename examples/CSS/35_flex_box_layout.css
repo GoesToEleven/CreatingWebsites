@@ -1,19 +1,30 @@
 * {
-    /*border: 1px solid gray;*/
+    border: 1px solid gray;
 }
 
 .container {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
 nav {
-    /*width: 200px;*/
+    width: 200px;
+    /*flex: 1;*/
     margin: 0px 20px 0px 0px;
 }
 
+/*ul {*/
+    /*display: flex;*/
+/*}*/
+
 .my-column {
     flex: 1;
+}
+.my-column2 {
+    display: flex;
+    align-items: center;
+    flex: 2;
 }
 
 /*
