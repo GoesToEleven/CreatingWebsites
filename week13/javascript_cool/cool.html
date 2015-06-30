@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Initial Setup</title>
+    <style>
+        @keyframes fader {
+            0% {
+                opacity: 0;
+            }
+            30% {
+                opacity: 1;
+            }
+            85% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @-moz-keyframes fader {
+            0% {
+                opacity: 0;
+            }
+            30% {
+                opacity: 1;
+            }
+            85% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @-webkit-keyframes fader {
+            0% {
+                opacity: 0;
+            }
+            30% {
+                opacity: 1;
+            }
+            85% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        html {
+            font: 300 100% 'Helvetica Neue', Sans-Serif;
+        }
+
+        body, figure {
+            padding: 0;
+            margin: 0;
+        }
+
+        figure, footer {
+            display: -webkit-flex;
+            -webkit-align-items: center;
+            -webkit-justify-content: center;
+        }
+
+        figure {
+            animation: fader 3.001s infinite;
+            -moz-animation: fader 3.001s infinite;
+            -webkit-animation: fader 3.001s infinite;
+            height: 100vh;
+            width: inherit;
+            font-size: 300%;
+        }
+
+        footer {
+            box-sizing: border-box;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<figure id='greeting'>
+    <img id="mainImage" src="01.jpeg">
+</figure>
+<footer>&copy;2015 Julian Coleman. An iOS initial setup greeter</footer>
+<script>
+    var m = [
+                    "01.jpeg",
+                    "02.png",
+                    "03.png",
+                    "04.png",
+                    "05.png",
+                    "06.jpeg",
+                    "07.jpeg",
+                    "08.png",
+                    "09.jpeg",
+                    "10.jpeg",
+                    "11.jpeg",
+                    "12.jpeg"
+            ],
+            i = 0;
+
+    function update() {
+        document.getElementById('mainImage').setAttribute("src", m[i]);
+        i++;
+        if (i >= m.length) i = 0;
+    }
+
+    update();
+    setInterval(update, 3000);
+
+    //  Sometimes the CSS and JavaScript have trouble lining up when switching to another application or when
+    //  you change tabs in your browser. This should only be viewed for a short duration to get a glimpse of
+    //  the project. I am not interested in fixing this as it is not a practical application.
+</script>
+</body>
+</html>
